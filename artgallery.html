@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        h1{
+    font-size: 100px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color:rgb(109, 143, 255);
+    text-shadow: 2px 2px 4px rgb(0, 0, 0);
+}
+body {
+   margin:0px;
+   padding:4px;
+   background:linear-gradient(90deg,rgb(31, 79, 79),rgb(54, 49, 64));
+}
+.gallery{
+    align-self: center;
+    width:100%;
+    height:100vh;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap:10px
+}
+.image{   
+    width:500px;
+    position:relative;
+
+}
+img{
+    width: 100%;
+}
+.image:hover{
+    box-shadow: 0 0 50px rgb(55, 61, 149);
+}
+.content{
+    text-align: center;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    position: absolute;
+    background: rgba(0,0,0,0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    transition: 0.7s;
+}
+.content:hover{
+    opacity: 1;
+}
+.content h1{
+    font-size: 50px;
+    color: rgb(253, 214, 61);
+}
+.content h2{
+    font-size: 25px;
+    color:rgb(242, 255, 67);
+}
+.content p{
+   
+    font-size: 18px;
+    color:aliceblue;
+    
+}
+
+    </style>
+</head>
+<body>
+    <h1 align="center">Art Gallery</h1>
+    <div class = "gallery">
+        <div class = "image">
+            <img src="https://images.squarespace-cdn.com/content/v1/56c462e37da24f9466fa8ed8/1609940882434-1O3VLCLTM0F03WVK9482/mona-lisa.jpg?format=1500w">
+            <div class = "content">
+                <h1>Mona Lisa</h1>
+                <h2>Leonardo Da Vinci</h2>
+                <p>The famous painting by Leonardo Da Vinci is completely out of the world! It is one of the most valuable paintings in the world.
+                     The Mona Lisa bears a strong resemblance to many Renaissance depictions of the Virgin Mary. </p>
+            </div>  
+        </div>
+        <div class = "image">
+            <img src="https://images.squarespace-cdn.com/content/v1/56c462e37da24f9466fa8ed8/1609940952490-R2VXPTON0903SXMRNS77/image-asset.jpeg?format=1500w" >
+            <div class = "content">
+                <h1>The Scream</h1>
+                <h2>Edward Munch</h2>
+                <p>This popular painting has attracted many people, amazed even more, and scared a few.
+                It became one of the most iconic painting picture, seen as symbolising the anxiety of the human condition.</p>
+            </div>  
+        </div>
+        
+        <div class = "image">
+            <img src="https://images.squarespace-cdn.com/content/v1/56c462e37da24f9466fa8ed8/1609941090334-53321WUYFJVGDJ0JETQS/300px-Meisje_met_de_parel.jpg?format=1500w">
+            <div class = "content">
+                <h1>Girl with a Pearl Earing</h1>
+                <h2>Edward Munch</h2>
+                <p> In 2006, the Dutch public selected it as the most beautiful painting in the Netherlands.
+                     It depicts a European girl wearing an exotic dress, an oriental turban, and an improbably large pearl earring.</p>
+            </div>  
+        </div>
+        <div class = "image">
+            <img src="https://images.squarespace-cdn.com/content/v1/56c462e37da24f9466fa8ed8/1609941595358-8L5L0H65JT6IEEKBF8C2/Van_Eyck_-_Arnolfini_Portrait.jpg?format=1500w">
+            <div class = "content">
+                <h1>The Arnolfini Portrait</h1>
+                <h2>Jan Van Eyck</h2>
+                <p>One of the most significant works produced during the Northern Renaissance,
+                     this composition is believed to be one of the first paintings executed in oils. </p>
+            </div>  
+        </div>
+    </div>
+</body>
+</html>
